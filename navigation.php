@@ -1,8 +1,8 @@
 <header>
-  <img src="<?php echo get_settings('siteurl'); ?>/wp-content/themes/responsive/images/logo-type.png" alt="" />
-  <!-- <h1><a href="<?php echo get_settings('siteurl'); ?>" tabindex="1">Punkchip</a></h1> -->
+  <img src="<?php echo get_settings('siteurl'); ?>/wp-content/themes/responsive/images/logo.png" alt="" />
+  <h1><a href="<?php echo get_settings('siteurl'); ?>" tabindex="1">punkchip</a></h1>
   <nav>
-    <div class="for-mobile">menu</div>
+    <div class="for-mobile">menu <span>&#9660;</span></div>
   	<ul class="non-mobile">
   		<li><a href="<?php echo get_settings('siteurl'); ?>/category/html-5/">HTML</a></li>
   		<li><a href="<?php echo get_settings('siteurl'); ?>/category/css/">CSS</a></li>

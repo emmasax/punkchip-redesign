@@ -22,24 +22,22 @@
 		$my_query = new WP_Query('posts_per_page=1');
 		while ($my_query->have_posts()) : $my_query->the_post(); $do_not_duplicate = $post->ID;?>
 
-	<div class="featured">
-		<section>
-			<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>"><?php the_title(); ?></a></h1>
-			<p><time pubdate><?php the_time('j F Y'); ?></time></p>
-			<?php the_content(""); ?>
-			<p class="post-categories">Posted in: <?php the_category(', '); ?></p>
-		</section>
-		<aside>
-			<p>Emma Sax writes on punkchip.com about web standards and accessibility.  She is currently employed by Forward, working as a front-end developer.</p>
-			<p><a href="/cv">Career history</a></p>
-			<ul class="networking">
-				<li><a href="http://www.twitter.com/emmasax" title="Follow Emma on Twitter"><img src="http://www.punkchip.com/cv/image/twitter.png" alt="Follow emmasax on Twitter" /></a></li>
-				<li><a href="mailto:emma@punkchip.com" title="Contact Emma"><img src="http://www.punkchip.com/cv/image/email.png" alt="Contact me" /></a></li>
-				<li><a href="http://www.linkedin.com/pub/emma-sax/3/618/490" title="Emma Sax on Linkedin"><img src="http://www.punkchip.com/cv/image/linkedin.png" alt="Emma Sax on Linkedin" /></a></li>
-				<li><a href="/cv" title="Emma Sax's CV"><img src="http://www.punkchip.com/cv/image/favicon.png" alt="Emma Sax - CV" /></a></li>
-			</ul>
-		</aside>
-	</div>
+	<section class="featured">
+		<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>"><?php the_title(); ?></a></h1>
+		<time pubdate><?php the_time('j F Y'); ?></time>
+		<?php the_content(""); ?>
+		<p class="post-categories">Posted in: <?php the_category(', '); ?></p>
+	</section>
+	<aside>
+		<p>Emma Sax writes on punkchip.com about web standards and accessibility.  She is currently employed by Forward, working as a front-end developer.</p>
+    <!-- <p><a href="/cv">Career history</a></p> -->
+		<ul class="networking">
+			<li><a href="http://www.twitter.com/emmasax" title="Follow Emma on Twitter"><img src="http://www.punkchip.com/cv/image/twitter.png" alt="Follow emmasax on Twitter" /></a></li>
+			<li><a href="mailto:emma@punkchip.com" title="Contact Emma"><img src="http://www.punkchip.com/cv/image/email.png" alt="Contact me" /></a></li>
+			<li><a href="http://www.linkedin.com/pub/emma-sax/3/618/490" title="Emma Sax on Linkedin"><img src="http://www.punkchip.com/cv/image/linkedin.png" alt="Emma Sax on Linkedin" /></a></li>
+			<li><a href="/cv" title="Emma Sax's CV"><img src="http://www.punkchip.com/cv/image/favicon.png" alt="Emma Sax - CV" /></a></li>
+		</ul>
+	</aside>
 
 	<?php endwhile; endif; ?>
 	
@@ -55,7 +53,7 @@
 	
 					<section<?php if($count%2==0) : ?> class="edge<?php if($count==2) : ?> top<?php endif; ?>"<?php endif; ?><?php if($count==1) : ?> class="top"<?php endif; ?>>
 						<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>"><?php the_title(); ?></a></h2>
-						<p><?php the_time('j F Y'); ?></p>
+						<time pubdate><?php the_time('j F Y'); ?></time>
 						<?php the_content(""); ?>
 					</section>
 					

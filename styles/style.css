@@ -10,12 +10,18 @@
   display: none  
 }
 
-html {
-  background-color: #462f2a;
+.featured, .other {
+  padding: 0 10px;
 }
 
-body {
-  background-color: #fcf4dd;
-  margin: 10px;
-  padding: 10px;
+.featured {
+  margin-bottom: 30px;
+}
+
+.other section {
+  margin-bottom: 40px;
+}
+
+.post-categories {
+  font-size: 12px;
 }

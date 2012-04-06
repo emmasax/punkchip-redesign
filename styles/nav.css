@@ -1,21 +1,55 @@
 header {
-  text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   overflow: hidden;
+  position: relative;
 }
 
 header img {
-  width: 50%; 
-  max-width: 100%;
+  width: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
 }
 
 header h1 {
   float: left;
   line-height: 1;
+  font-size: 110%;
+  margin-left: 110px;
+  margin-top: 10px;
+  position: absolute;
+  text-shadow: 0 1px 1px #fff;
+  left: 0;
+  top: 0;
+}
+
+header h1 a, header h1 a:visited {
+  color: #b4362b;
+  font-weight: bold;
+  font-size: 30px;
 }
 
 header div {
+  background-image: linear-gradient(bottom, rgb(252,244,221) 0%, rgb(255,255,255) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(252,244,221) 0%, rgb(255,255,255) 100%);
+  background-image: -moz-linear-gradient(bottom, rgb(252,244,221) 0%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgb(252,244,221) 0%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient(bottom, rgb(252,244,221) 0%, rgb(255,255,255) 100%);
+  background-image: -webkit-gradient(
+  	linear,
+  	left bottom,
+  	left top,
+  	color-stop(0, rgb(252,244,221)),
+  	color-stop(1, rgb(255,255,255))
+  );
+  border-radius: 5px;
+  border: 1px solid #fccf93;
+  color: #b4362b;
   position: absolute;
-  top: 15px;
-  right: 20px;
+  top: 10px;
+  right: 10px;
+  padding: 6px 15px 8px;
+}
+header span {
+  color: #b4362b;
+  font-size: 11px;
 }
