@@ -1,0 +1,21 @@
+@import url("base.css");
+@import url("nav.css");
+@import url("category.css");
+@import url("featured.css");
+@import url("related.css");
+@import url("comments.css");
+@import url("buttons.css");
+
+.non-mobile, .non-desktop, .non-tablet {
+  display: none  
+}
+
+html {
+  background-color: #462f2a;
+}
+
+body {
+  background-color: #fcf4dd;
+  margin: 10px;
+  padding: 10px;
+}

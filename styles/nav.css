@@ -1,0 +1,21 @@
+header {
+  text-align: center;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+header img {
+  width: 50%;
+  max-width: 100%;
+}
+
+header h1 {
+  float: left;
+  line-height: 1;
+}
+
+header div {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
